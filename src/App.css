@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #c0f8f3ba;
+  background-color: #94eee7ba;
 }
 
 .app {
@@ -29,11 +29,12 @@ body {
   display: flex;
   flex-direction: column;
   flex: 0.7;
-  margin-right: 20px;
+  width: 750px;
+  margin-right: 10px;
 }
 
 .app__right {
-  flex: 0.3;
+  flex: 0.4;
   margin-bottom: 20px;
 }
 .app__dropDown {

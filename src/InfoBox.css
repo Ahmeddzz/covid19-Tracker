@@ -1,5 +1,18 @@
 .infoBox {
-  margin: 10px;
-  padding: 10px;
+  flex: 1;
   background-color: grey;
+}
+
+.infobox__cases {
+  color: #148279ba;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.infoBox__total {
+  color: #657d7d;
+  font-weight: 700 !important;
+  font-size: 0.8rem !important;
+  margin-top: 15px !important;
 }
