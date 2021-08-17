@@ -84,7 +84,7 @@ function App() {
         setCountryInfo(data);
         setCountry(countryCode);
         setMapCenter([data.countryInfo.lat, data.countryInfo.long]);
-        setMapZoom(3);
+        setMapZoom(4);
       
       
     });
@@ -108,22 +108,21 @@ function App() {
         </div>
         <Header />
         {/*Title + select input dopdown field */}
-
         <div className="app__stats">
           <InfoBox  
-          onClick={(event) => setCasesType("cases")}
+          onClick={(event) => setCasesType('cases')}
            title="Coronavirus Cases" 
            cases = {prettyPrintStat(countryInfo.todayCases)} 
            total={prettyPrintStat(countryInfo.cases)} />
 
           <InfoBox 
-          onClick={(event) => setCasesType("recovered")}
+          onClick={(event) => setCasesType('recovered')}
            title="Recovered" 
            cases ={prettyPrintStat(countryInfo.todayRecovered)} 
            total={prettyPrintStat(countryInfo.recovered)} />
 
           <InfoBox 
-          onClick={(event) => setCasesType("deaths")}
+          onClick={(event) => setCasesType('deaths')}
           title="Deaths" 
           cases={prettyPrintStat(countryInfo.todayDeaths)} 
           total ={prettyPrintStat(countryInfo.deaths)}/>

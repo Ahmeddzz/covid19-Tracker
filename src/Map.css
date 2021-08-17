@@ -14,13 +14,13 @@
 }
 
 .info-flag img {
-  width: 80px;
+  width: 100px;
   border-radius: 5px;
   margin-bottom: 5px;
 }
 
 .info-flag {
-  height: 80px;
+  height: 75px;
   width: 100%;
   background-size: cover;
   border-radius: 8px;

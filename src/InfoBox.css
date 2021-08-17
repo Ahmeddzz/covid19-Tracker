@@ -1,6 +1,8 @@
 .infoBox {
   flex: 1;
   background-color: grey;
+  cursor: pointer;
+  transition: 100ms color ease-in;
 }
 
 .infobox__cases {
@@ -8,11 +10,19 @@
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: 100ms color ease-in;
 }
 
+.infobox__title {
+  cursor: pointer;
+  transition: 100ms color ease-in;
+}
 .infoBox__total {
   color: #657d7d;
   font-weight: 700 !important;
   font-size: 0.8rem !important;
   margin-top: 15px !important;
+  cursor: pointer;
+  transition: 100ms color ease-in;
 }
