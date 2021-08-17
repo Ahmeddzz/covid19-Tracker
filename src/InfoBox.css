@@ -1,8 +1,6 @@
 .infoBox {
   flex: 1;
-  background-color: grey;
   cursor: pointer;
-  transition: 100ms color ease-in;
 }
 
 .infobox__cases {
@@ -12,6 +10,10 @@
   margin-bottom: 0.5rem;
   cursor: pointer;
   transition: 100ms color ease-in;
+}
+
+.infoBox--selected {
+  border-top: 10px solid #13a552ba;
 }
 
 .infobox__title {

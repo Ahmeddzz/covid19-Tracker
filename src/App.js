@@ -109,19 +109,22 @@ function App() {
         <Header />
         {/*Title + select input dopdown field */}
         <div className="app__stats">
-          <InfoBox  
+          <InfoBox 
+          active={casesType === 'cases'} 
           onClick={(event) => setCasesType('cases')}
            title="Coronavirus Cases" 
            cases = {prettyPrintStat(countryInfo.todayCases)} 
            total={prettyPrintStat(countryInfo.cases)} />
 
           <InfoBox 
+          active={casesType === 'recovered'}
           onClick={(event) => setCasesType('recovered')}
            title="Recovered" 
            cases ={prettyPrintStat(countryInfo.todayRecovered)} 
            total={prettyPrintStat(countryInfo.recovered)} />
 
           <InfoBox 
+          active={casesType === 'deaths'}
           onClick={(event) => setCasesType('deaths')}
           title="Deaths" 
           cases={prettyPrintStat(countryInfo.todayDeaths)} 
@@ -138,8 +141,8 @@ function App() {
         <CardContent>
           <h3>Live Cases by Country</h3>
           <Table countries={tableData}/>
-          <h3>Worldwide new cases</h3>
-          <LineGraph />
+          <h3>Worldwide new {casesType}</h3>
+          <LineGraph casesType={casesType}/>
         </CardContent >
 
 
